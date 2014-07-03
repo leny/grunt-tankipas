@@ -55,7 +55,7 @@ module.exports = ( grunt ) ->
                 options: {}
             custom:
                 options:
-                    gap: 10
+                    gap: 20
                     raw: yes
 
     grunt.loadTasks "tasks"
