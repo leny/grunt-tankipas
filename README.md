@@ -50,6 +50,8 @@ grunt.initConfig({
 });
 ```
 
+The "tankipas" task is coded to be used as MultiTask **or** as a simple task : if you don't define it in your grunt config, calling `grunt tankipas` will use the default options.
+
 ### Target
 
 **Tankipas** don't expect path for source, as it will look the logs for the current project's version control system logs to work.

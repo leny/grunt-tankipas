@@ -18,7 +18,8 @@ error = chalk.bold.red;
 (spinner = require("simple-spinner")).change_sequence(["◓", "◑", "◒", "◐"]);
 
 module.exports = function(grunt) {
-  return grunt.registerMultiTask("tankipas", "Compute approximate development time spent on a project, using logs from version control system.", function() {
+  var tankipasTask;
+  tankipasTask = function() {
     var fNext, oOptions;
     fNext = this.async();
     oOptions = this.options({
@@ -46,5 +47,10 @@ module.exports = function(grunt) {
       }
       return fNext();
     });
-  });
+  };
+  if (grunt.config.data.tankipas) {
+    return grunt.registerMultiTask("tankipas", "Compute approximate development time spent on a project, using logs from version control system.", tankipasTask);
+  } else {
+    return grunt.registerTask("tankipas", "Compute approximate development time spent on a project, using logs from version control system.", tankipasTask);
+  }
 };

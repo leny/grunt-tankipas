@@ -51,8 +51,7 @@ module.exports = ( grunt ) ->
                 files:
                     "tasks/tankipas.js": "src/tankipas.coffee"
         tankipas:
-            default:
-                options: {}
+            default: {}
             custom:
                 options:
                     gap: 20

@@ -21,7 +21,7 @@ error = chalk.bold.red
 
 module.exports = ( grunt ) ->
 
-    grunt.registerMultiTask "tankipas", "Compute approximate development time spent on a project, using logs from version control system.", ->
+    tankipasTask = ->
         fNext = @async()
 
         oOptions = @options
@@ -46,3 +46,8 @@ module.exports = ( grunt ) ->
                 sUserString = if oOptions.user then " (for #{ chalk.cyan( oOptions.user ) })" else ""
                 grunt.log.writeln "Time spent on project#{ sUserString }: ±#{ chalk.yellow( iHours ) } hours & #{ chalk.yellow( iMinutes ) } minutes."
             fNext()
+
+    if grunt.config.data.tankipas
+        grunt.registerMultiTask "tankipas", "Compute approximate development time spent on a project, using logs from version control system.", tankipasTask
+    else
+        grunt.registerTask "tankipas", "Compute approximate development time spent on a project, using logs from version control system.", tankipasTask
