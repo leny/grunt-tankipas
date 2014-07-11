@@ -56,6 +56,7 @@ module.exports = ( grunt ) ->
                 options:
                     gap: 20
                     raw: yes
+                    commit: "6c7cd382b868c32ca13e1f7302469035e19480d4"
 
     grunt.loadTasks "tasks"
 
