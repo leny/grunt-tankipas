@@ -28,6 +28,7 @@ module.exports = ( grunt ) ->
             system: null
             gap: 120
             user: null
+            commit: null
             raw: no
 
         spinner.start 50

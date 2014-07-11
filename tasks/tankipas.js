@@ -26,6 +26,7 @@ module.exports = function(grunt) {
       system: null,
       gap: 120,
       user: null,
+      commit: null,
       raw: false
     });
     spinner.start(50);
