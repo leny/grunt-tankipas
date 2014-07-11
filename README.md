@@ -81,6 +81,13 @@ Default value: `null`
 
 If you work as a team, you can be interested to filters the commits and compute the time of only one user, which you can precise with the `user` option.
 
+#### options.commit
+
+Type: `String`
+Default value: `null`
+
+The result will be computed since the given commit reference, instead of the beginning of the project.
+
 #### options.raw
 
 Type: `Boolean`  
