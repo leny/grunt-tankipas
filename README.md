@@ -81,6 +81,13 @@ Default value: `null`
 
 If you work as a team, you can be interested to filters the commits and compute the time of only one user, which you can precise with the `user` option.
 
+#### options.branch
+
+Type: `String`
+Default value: `null`
+
+You can filters the commits and compute the time of only one branch, which you can precise with the `branch` option.
+
 #### options.commit
 
 Type: `String`
