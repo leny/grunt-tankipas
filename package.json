@@ -1,6 +1,6 @@
 {
   "name": "grunt-tankipas",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Compute approximate development time spent on a project, using logs from version control system.",
   "keywords": [
     "gruntplugin",
