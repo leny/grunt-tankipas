@@ -1,6 +1,6 @@
 # grunt-tankipas
 
-![NPM version](http://img.shields.io/npm/v/grunt-tankipas.svg) ![Dependency Status](https://david-dm.org/leny/grunt-tankipas.svg) ![Downloads counter](http://img.shields.io/npm/dm/grunt-tankipas.svg)
+![NPM version](http://img.shields.io/npm/v/grunt-tankipas.svg) ![Dependency Status](https://david-dm.org/leny/grunt-tankipas.svg) ![Downloads counter](http://img.shields.io/npm/dm/grunt-tankipas.svg) [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 > Compute approximate development time spent on a project, using logs from version control system.
 
